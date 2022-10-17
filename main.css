@@ -1,12 +1,19 @@
 body{
-    background-color: beige;
-}
+    background-color: beige; 
+} 
 
 h1{
-    color: blueviolet;
+    color: rgb(199, 147, 248);
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
+}
+
+
+
+.img-inicio{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .marcadores{
@@ -21,11 +28,8 @@ h1{
     background-color: #e763968c;  
 }
 
-.img-inicio {
-    display: flex;
-    width: 100%;
-    height: 50%;
-}
+
+
 
 h2{
     text-align: center;
@@ -59,4 +63,12 @@ p{
 
 iframe{
     padding-top: 30px;
+}
+
+
+.footer{
+    display: grid;
+    
+
+
 }
