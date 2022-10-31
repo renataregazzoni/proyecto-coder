@@ -1,0 +1,26 @@
+{
+  "name": "paula-cakes",
+  "version": "1.0.0",
+  "description": "Pasteleria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renataregazzoni/proyecto-coder.git"
+  },
+  "keywords": [
+    "Tortas"
+  ],
+  "author": "Renata Regazzoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renataregazzoni/proyecto-coder/issues"
+  },
+  "homepage": "https://github.com/renataregazzoni/proyecto-coder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
