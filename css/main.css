@@ -1,21 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Shalimar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
 body {
-  background-color: rgb(241, 197, 238);
+  background-color: rgba(247, 215, 173, 0.993);
 }
 
 h1 {
-  /*titulo*/
+  font-family: "Shalimar", cursive;
   color: rgb(134, 96, 168);
   text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 50px;
+  font-size: 50%;
   animation-name: titulo-a;
   animation-iteration-count: infinite;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-timing-function: linear;
 }
 
 @keyframes titulo-a {
-  /*animacion del titulo*/
   0% {
     text-align: center;
   }
@@ -32,7 +33,6 @@ h1 {
     text-align: center;
   }
 }
-
 .img-inicio {
   /* Imagenes de inicio*/
   display: flex;
@@ -40,73 +40,62 @@ h1 {
   justify-content: space-evenly;
   flex-wrap: nowrap;
 }
-
-.img-inicio-1 {
+.img-inicio .img-inicio-1 {
   display: flex;
   width: 19%;
   /* Fin de imagenes de inicio*/
 }
 
-.marcadores {
-  /* Estilo del Menu*/
-  list-style: none;
+.footer2 {
+  /* Parrafo del footer*/
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  border-style: hidden;
-  border-width: medium;
-  border-color: #e763968c;
-  background-color: #e763968c;
+  background-color: rgba(248, 143, 178, 0.89);
+  color: hwb(276 9% 89%);
+  font-size: 25px;
 }
 
-a:link {
-  /*Links*/
-  color: hwb(272 30% 47%);
-  text-decoration: none;
+.footer3 {
+  /*Redes del footer*/
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
 }
-
-a:visited {
-  color: hwb(272 30% 47%);
-  text-decoration: none;
+.footer3 .imgfooter {
+  /*Imagenes de las redes del footer*/
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
 }
-
-a:hover {
-  color: hwb(272 30% 47%);
-  text-decoration: none;
-}
-
-a:active {
-  color: hwb(272 30% 47%);
-  text-decoration: none;
-  /*fin de links*/
+.footer3 .imgfooter:hover {
+  /*animacion del footer*/
+  height: 60px;
+  width: 60px;
 }
 
 h2 {
-  /*Subtitulo*/
+  color: rgb(153, 120, 182);
+  font-family: "Poppins", sans-serif;
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 30px;
-  color: hwb(272 43% 35%);
 }
 
 .section-prod {
   display: flex;
   justify-content: space-evenly;
 }
-
-.prod-size {
+.section-prod .prod-size {
   /*Lista de productos*/
   list-style: none;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 20px;
-  color: hwb(272 43% 35%);
+  color: hwb(0 0% 100%);
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
 }
-
-.img-prod {
+.section-prod .prod-size .img-prod {
   /* Imagenes de productos*/
   display: flex;
   width: 60%;
@@ -116,26 +105,18 @@ h2 {
 .promo-size {
   /*Lista promociones*/
   list-style: none;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 20px;
   color: hwb(272 43% 35%);
   display: grid;
   grid-template-rows: 50%;
   grid-template-columns: 50% 50%;
 }
-
-.img-promo {
+.promo-size .img-promo {
   /* Imagenes promociones*/
   display: flex;
   width: 250px;
   height: 200px;
-}
-
-h3 {
-  text-align: left;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 25px;
-  color: hwb(272 43% 35%);
 }
 
 .p-parrafo {
@@ -143,21 +124,27 @@ h3 {
   display: inline-block;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15px;
+  color: black;
 }
 
-.borde-rec {
-  /*Recetas*/
-  width: 300px;
-  border: solid rgba(233, 56, 203, 0.5);
-  padding: 50px;
-  margin: 20px;
+h3 {
+  text-align: left;
+  font-family: "Arimo", sans-serif;
+  font-size: 25px;
+  color: hwb(272 43% 35%);
 }
 
 article {
   display: flex;
   align-items: center;
 }
-/* Fin recetas*/
+article .borde-rec {
+  /*Recetas*/
+  width: 300px;
+  border: solid rgba(233, 56, 203, 0.5);
+  padding: 50px;
+  margin: 20px;
+}
 
 iframe {
   /*Video de recetas*/
@@ -166,89 +153,40 @@ iframe {
   height: 360px;
 }
 
-.footer2 {
-  /* Parrafo del footer*/
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  border-style: hidden;
-  border-width: medium;
-  background-color: #e763968c;
-  margin: 10px;
-  color: hwb(276 9% 89%);
-}
-
-.footer3 {
-  /*Redes del footer*/
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-evenly;
-}
-
-.imgfooter {
-  /*Imagenes de las redes del footer*/
-  height: 50px;
-  width: 50px;
-}
-
-.imgfooter:hover {
-  /*animacion del footer*/
-  height: 60px;
-  width: 60px;
-}
-
 form {
   /*Formulario*/
   display: grid;
   grid-template-columns: 25%;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 10% 10% 30% 10%;
   row-gap: 0px;
   justify-content: space-around;
 }
-
-.button {
+form .button {
   /*Boton del formulario*/
   background-color: rgb(169, 123, 212);
   border-color: rgb(169, 123, 212);
-  height: 20px;
+  height: 30px;
 }
-.button:hover {
-  background-color: rgb(134, 96, 168);
-  border-color: rgb(134, 96, 168);
-  height: 25px;
+form .button .button:hover {
+  background-color: rgb(127, 55, 190);
+  border-color: rgb(127, 55, 190);
+  height: 35px;
 }
 
-@media screen (min-width: 425px) {
-    
-  .marcadores {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img-promo {
-    display: flex;
-    width: 150px;
-    height: 100px;
-  }
-
-  iframe {
-    /*Video de recetas*/
-    padding-top: 30px;
-    width: 340px;
-    height: 160px;
-  }
-  .borde-rec {
-    /*Recetas*/
-    width: 200px;
-    border: solid rgba(233, 56, 203, 0.5);
-    padding: 40px;
-    margin: 15px;
-  }
-
-  article {
-    display: flex;
-    flex-direction: column;
-  }
-  /* Fin recetas*/
+.menu-padre {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 30px;
+  justify-content: space-evenly;
+  background-color: rgba(248, 143, 178, 0.89);
+  font-family: "Poppins", sans-serif;
 }
+.menu-padre a {
+  text-decoration: none;
+}
+.menu-padre a:hover {
+  color: #000;
+}
+
+/*# sourceMappingURL=main.css.map */

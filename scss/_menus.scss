@@ -1,0 +1,21 @@
+.menu-padre{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 30px;
+    justify-content: space-evenly;
+    
+    background-color: rgba(248, 143, 178, 0.89);
+    font-family: 'Poppins', sans-serif;
+
+    a{ 
+        text-decoration: none;
+     }
+
+    a:hover{
+        color: #000;
+    }
+}
+
+
+
