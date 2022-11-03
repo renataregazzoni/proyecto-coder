@@ -1,0 +1,10 @@
+@media screen and (min-width:425px) { 
+    .menu.padre{ 
+    padding: 10px;    
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: space-evenly;
+ }
+  }
+    

@@ -1,11 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: rgba(247, 215, 173, 0.993);
+    background-color: rgba(238, 229, 218, 0.993);
 }
 h1{
     font-family: 'Shalimar', cursive;
     color: rgb(134,96,168);
     text-align: center;
-    font-size: 50%;
+    margin: 20px;
+    padding: 20px;
     animation-name: titulo-a;
     animation-iteration-count: infinite ;
     animation-duration: 6s;
@@ -159,19 +165,19 @@ h1{
         grid-template-rows: 10% 10% 30% 10%;
         row-gap: 0px;
         justify-content: space-around;
+         }
+
+         .button {
+            /*Boton del formulario*/
+            background-color: rgb(169, 123, 212);
+            border-color: rgb(169, 123, 212);
+            height: 30px;
+          
+          &:hover {
+            background-color: rgb(255, 121, 210);
+            border-color: rgb(255, 121, 210);
+          }
+           }
+      
+     
         
-      
-      
-      .button {
-        /*Boton del formulario*/
-        background-color: rgb(169, 123, 212);
-        border-color: rgb(169, 123, 212);
-        height: 30px;
-      
-      .button:hover {
-        background-color: rgb(127, 55, 190);
-        border-color: rgb(127, 55, 190);
-        height: 35px;
-      }
-       }
-        }
