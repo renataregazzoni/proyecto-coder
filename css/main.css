@@ -1,14 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Shalimar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
-  background-color: rgba(247, 215, 173, 0.993); }
+  background-color: rgba(238, 229, 218, 0.993); }
 
 h1 {
   font-family: 'Shalimar', cursive;
   color: #8660a8;
   text-align: center;
-  font-size: 50%;
+  margin: 20px;
+  padding: 20px;
   animation-name: titulo-a;
   animation-iteration-count: infinite;
   animation-duration: 6s;
@@ -144,8 +150,7 @@ form {
   height: 30px; }
   .button:hover {
     background-color: #ff79d2;
-    border-color: #ff79d2;
-    height: 35px; }
+    border-color: #ff79d2; }
 
 .menu-padre {
   padding: 10px;
@@ -159,3 +164,11 @@ form {
     text-decoration: none; }
   .menu-padre:hover {
     color: #000; }
+
+@media screen and (min-width: 425px) {
+  .menu.padre {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: space-evenly; } }
