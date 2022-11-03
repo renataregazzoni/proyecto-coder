@@ -159,19 +159,20 @@ h1{
         grid-template-rows: 10% 10% 30% 10%;
         row-gap: 0px;
         justify-content: space-around;
+         }
+
+         .button {
+            /*Boton del formulario*/
+            background-color: rgb(169, 123, 212);
+            border-color: rgb(169, 123, 212);
+            height: 30px;
+          
+          &:hover {
+            background-color: rgb(255, 121, 210);
+            border-color: rgb(255, 121, 210);
+            height: 35px;
+          }
+           }
+      
+     
         
-      
-      
-      .button {
-        /*Boton del formulario*/
-        background-color: rgb(169, 123, 212);
-        border-color: rgb(169, 123, 212);
-        height: 30px;
-      
-      .button:hover {
-        background-color: rgb(127, 55, 190);
-        border-color: rgb(127, 55, 190);
-        height: 35px;
-      }
-       }
-        }

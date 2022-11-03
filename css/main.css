@@ -2,49 +2,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
 body {
-  background-color: rgba(247, 215, 173, 0.993);
-}
+  background-color: rgba(247, 215, 173, 0.993); }
 
 h1 {
-  font-family: "Shalimar", cursive;
-  color: rgb(134, 96, 168);
+  font-family: 'Shalimar', cursive;
+  color: #8660a8;
   text-align: center;
   font-size: 50%;
   animation-name: titulo-a;
   animation-iteration-count: infinite;
   animation-duration: 6s;
-  animation-timing-function: linear;
-}
+  animation-timing-function: linear; }
 
 @keyframes titulo-a {
   0% {
-    text-align: center;
-  }
+    text-align: center; }
   25% {
-    text-align: right;
-  }
+    text-align: right; }
   50% {
-    text-align: center;
-  }
+    text-align: center; }
   75% {
-    text-align: left;
-  }
+    text-align: left; }
   100% {
-    text-align: center;
-  }
-}
+    text-align: center; } }
+
 .img-inicio {
   /* Imagenes de inicio*/
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
-}
-.img-inicio .img-inicio-1 {
-  display: flex;
-  width: 19%;
-  /* Fin de imagenes de inicio*/
-}
+  flex-wrap: nowrap; }
+  .img-inicio .img-inicio-1 {
+    display: flex;
+    width: 19%;
+    /* Fin de imagenes de inicio*/ }
 
 .footer2 {
   /* Parrafo del footer*/
@@ -54,104 +45,89 @@ h1 {
   justify-content: space-evenly;
   background-color: rgba(248, 143, 178, 0.89);
   color: hwb(276 9% 89%);
-  font-size: 25px;
-}
+  font-size: 25px; }
 
 .footer3 {
   /*Redes del footer*/
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: space-evenly;
-}
-.footer3 .imgfooter {
-  /*Imagenes de las redes del footer*/
-  margin-top: 10px;
-  height: 50px;
-  width: 50px;
-}
-.footer3 .imgfooter:hover {
-  /*animacion del footer*/
-  height: 60px;
-  width: 60px;
-}
+  justify-content: space-evenly; }
+  .footer3 .imgfooter {
+    /*Imagenes de las redes del footer*/
+    margin-top: 10px;
+    height: 50px;
+    width: 50px; }
+  .footer3 .imgfooter:hover {
+    /*animacion del footer*/
+    height: 60px;
+    width: 60px; }
 
 h2 {
-  color: rgb(153, 120, 182);
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
+  color: #9978b6;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; }
 
 .section-prod {
   display: flex;
-  justify-content: space-evenly;
-}
-.section-prod .prod-size {
-  /*Lista de productos*/
-  list-style: none;
-  font-family: "Arimo", sans-serif;
-  font-size: 20px;
-  color: hwb(0 0% 100%);
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 50% 50%;
-}
-.section-prod .prod-size .img-prod {
-  /* Imagenes de productos*/
-  display: flex;
-  width: 60%;
-  height: 50%;
-}
+  justify-content: space-evenly; }
+  .section-prod .prod-size {
+    /*Lista de productos*/
+    list-style: none;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: hwb(0 0% 100%);
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%; }
+    .section-prod .prod-size .img-prod {
+      /* Imagenes de productos*/
+      display: flex;
+      width: 60%;
+      height: 50%; }
 
 .promo-size {
   /*Lista promociones*/
   list-style: none;
-  font-family: "Arimo", sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 20px;
   color: hwb(272 43% 35%);
   display: grid;
   grid-template-rows: 50%;
-  grid-template-columns: 50% 50%;
-}
-.promo-size .img-promo {
-  /* Imagenes promociones*/
-  display: flex;
-  width: 250px;
-  height: 200px;
-}
+  grid-template-columns: 50% 50%; }
+  .promo-size .img-promo {
+    /* Imagenes promociones*/
+    display: flex;
+    width: 250px;
+    height: 200px; }
 
 .p-parrafo {
   /*Parrafos fuera del footer*/
   display: inline-block;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15px;
-  color: black;
-}
+  color: black; }
 
 h3 {
   text-align: left;
-  font-family: "Arimo", sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 25px;
-  color: hwb(272 43% 35%);
-}
+  color: hwb(272 43% 35%); }
 
 article {
   display: flex;
-  align-items: center;
-}
-article .borde-rec {
-  /*Recetas*/
-  width: 300px;
-  border: solid rgba(233, 56, 203, 0.5);
-  padding: 50px;
-  margin: 20px;
-}
+  align-items: center; }
+  article .borde-rec {
+    /*Recetas*/
+    width: 300px;
+    border: solid rgba(233, 56, 203, 0.5);
+    padding: 50px;
+    margin: 20px; }
 
 iframe {
   /*Video de recetas*/
   padding-top: 30px;
   width: 540px;
-  height: 360px;
-}
+  height: 360px; }
 
 form {
   /*Formulario*/
@@ -159,19 +135,17 @@ form {
   grid-template-columns: 25%;
   grid-template-rows: 10% 10% 30% 10%;
   row-gap: 0px;
-  justify-content: space-around;
-}
-form .button {
+  justify-content: space-around; }
+
+.button {
   /*Boton del formulario*/
-  background-color: rgb(169, 123, 212);
-  border-color: rgb(169, 123, 212);
-  height: 30px;
-}
-form .button .button:hover {
-  background-color: rgb(127, 55, 190);
-  border-color: rgb(127, 55, 190);
-  height: 35px;
-}
+  background-color: #a97bd4;
+  border-color: #a97bd4;
+  height: 30px; }
+  .button:hover {
+    background-color: #ff79d2;
+    border-color: #ff79d2;
+    height: 35px; }
 
 .menu-padre {
   padding: 10px;
@@ -180,13 +154,8 @@ form .button .button:hover {
   grid-template-rows: 30px;
   justify-content: space-evenly;
   background-color: rgba(248, 143, 178, 0.89);
-  font-family: "Poppins", sans-serif;
-}
-.menu-padre a {
-  text-decoration: none;
-}
-.menu-padre a:hover {
-  color: #000;
-}
-
-/*# sourceMappingURL=main.css.map */
+  font-family: 'Poppins', sans-serif; }
+  .menu-padre a {
+    text-decoration: none; }
+  .menu-padre:hover {
+    color: #000; }
