@@ -40,6 +40,7 @@ h1 {
   flex-wrap: nowrap; }
   .img-inicio .img-inicio-1 {
     width: 20%;
+    height: auto;
     /* Fin de imagenes de inicio*/ }
 
 .footer1 {
