@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+$margen: 20px;
+$color-lila:  hwb(272 43% 35%);
+$color-rosa: rgba(248, 143, 178, 0.89);
+
 body{
     background-color: rgba(238, 229, 218, 0.993);
 }
@@ -10,7 +15,7 @@ h1{
     font-family: 'Shalimar', cursive;
     color: rgb(134,96,168);
     text-align: center;
-    margin: 20px;
+    margin: $margen;
     padding: 20px;
     animation-name: titulo-a;
     animation-iteration-count: infinite ;
@@ -35,10 +40,15 @@ h1{
   
   
   .img-inicio-1 {
-    display: flex;
-    width: 19%;
+    width: 20%;
     /* Fin de imagenes de inicio*/
   }
+   }
+
+   .footer1{
+    position: relative;
+    bottom: 0;
+    width: 100%;
    }
 
    .footer2 {
@@ -47,7 +57,7 @@ h1{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    background-color: rgba(248, 143, 178, 0.89);
+    background-color: $color-rosa;
     color: hwb(276 9% 89%);
     font-size: 25px;
    }
@@ -73,14 +83,14 @@ h1{
    }
 
    h2{
-    color: rgb(153, 120, 182);
+    color: $color-lila;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px
 }
 
-.section-prod {
-    display: flex;
-    justify-content: space-evenly;
   
   
   .prod-size {
@@ -98,17 +108,16 @@ h1{
     /* Imagenes de productos*/
     display: flex;
     width: 60%;
-    height: 50%;
+    height: 55%;
   }
    }
-    }
-
+    
     .promo-size {
         /*Lista promociones*/
         list-style: none;
         font-family: 'Arimo', sans-serif;
         font-size: 20px;
-        color: hwb(272 43% 35%);
+        color: $color-lila;
         display: grid;
         grid-template-rows: 50%;
         grid-template-columns: 50% 50%;
@@ -134,20 +143,19 @@ h1{
         text-align: left;
         font-family: 'Arimo', sans-serif; 
         font-size: 25px;
-        color: hwb(272 43% 35%);
+        color: $color-lila;
       }
 
       article {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
       
 
       .borde-rec {
         /*Recetas*/
         width: 300px;
         border: solid rgba(233, 56, 203, 0.5);
-        padding: 50px;
-        margin: 20px;
+        margin: $margen;
       }
        }
 
@@ -162,20 +170,20 @@ h1{
         /*Formulario*/
         display: grid;
         grid-template-columns: 25%;
-        grid-template-rows: 10% 10% 30% 10%;
+        grid-template-rows: 10% 10% 40% 10%;
         row-gap: 0px;
         justify-content: space-around;
          }
 
          .button {
             /*Boton del formulario*/
-            background-color: rgb(169, 123, 212);
-            border-color: rgb(169, 123, 212);
+            background-color: $color-lila;
+            border-color: $color-lila;
             height: 30px;
           
           &:hover {
-            background-color: rgb(255, 121, 210);
-            border-color: rgb(255, 121, 210);
+            background-color: $color-rosa;
+            border-color: $color-rosa;
           }
            }
       
