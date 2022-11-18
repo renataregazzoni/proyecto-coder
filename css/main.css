@@ -10,7 +10,7 @@ body {
   background-color: rgba(238, 229, 218, 0.993); }
 
 h1 {
-  font-family: 'Shalimar', cursive;
+  font-family: "Shalimar", cursive;
   color: #8660a8;
   text-align: center;
   margin: 20px;
@@ -75,7 +75,7 @@ h1 {
 
 h2, h3 {
   color: hwb(272 43% 35%);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   margin: 30px;
@@ -84,7 +84,7 @@ h2, h3 {
 .prod-size {
   /*Lista de productos*/
   list-style: none;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 20px;
   color: hwb(0 0% 100%);
   display: grid;
@@ -99,7 +99,7 @@ h2, h3 {
 .promo-size {
   /*Lista promociones*/
   list-style: none;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 20px;
   color: hwb(272 43% 35%);
   display: grid;
@@ -184,8 +184,7 @@ a:hover {
     align-items: center;
     flex-direction: column; }
     .img-inicio .img-inicio-1 {
-      width: 60%;
-      height: 50%; }
+      width: 60%; }
   .prod-size {
     display: grid;
     grid-template-columns: 100%;
