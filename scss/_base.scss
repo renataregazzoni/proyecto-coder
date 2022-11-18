@@ -8,6 +8,12 @@ $margen: 20px;
 $color-lila:  hwb(272 43% 35%);
 $color-rosa: rgba(248, 143, 178, 0.89);
 
+@mixin parrafos {
+        display: inline-block;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        padding: 5%;
+    }
+
 body{
     background-color: rgba(238, 229, 218, 0.993);
 }
@@ -131,20 +137,15 @@ h1{
         height: 200px;
       }
        }
-
+      /*Parrafos fuera del footer*/
       .p-parrafo {
-        /*Parrafos fuera del footer*/
-        display: inline-block;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        font-size: 15px;
-        color: black;
+       @include parrafos;
+       font-size: 15px;
+       color: black;
       }
 
       h3 {
-        text-align: left;
-        font-family: 'Arimo', sans-serif; 
-        font-size: 25px;
-        color: $color-lila;
+        @extend h2;
       }
 
       article {
@@ -186,7 +187,10 @@ h1{
             background-color: $color-rosa;
             border-color: $color-rosa;
           }
-           }
-      
-     
-        
+           }    
+    
+        .parr-inicio{
+            @include parrafos;
+            font-size: 20px;
+            color: $color-lila;
+        }
