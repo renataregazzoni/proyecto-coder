@@ -14,12 +14,13 @@
 
     .img-inicio-1{
             width: 60%;
+            height: 50%;
         }
     }
     .prod-size{
         display: grid;
-        grid-template-rows: 25%;
         grid-template-columns: 100%;
+        grid-template-rows: 25%;
     }
 
     .promo-size{
